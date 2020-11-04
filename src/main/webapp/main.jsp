@@ -166,7 +166,7 @@
                 <li ><a href="/findAllDrugs">药品信息</a></li>
                 <li><a href="#"  data-toggle="modal" data-target="#my">添加用户</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#medi">添加药品</a></li>
-                <li><a href="#">医药资讯</a></li>
+                <li><a href="/news.jsp">医药资讯</a></li>
                 <li><a href="#">财务管理</a></li>
                 <li><a href="#">价格详情</a></li>
                 <li><a href="#">系统管理</a></li>
@@ -360,14 +360,7 @@
         location.href="/toUpdateDrugInfo?drugId="+drugid+"&drugName="+drugname+"&drugPrice="+drugprice+"&drugUser="+druguser;
     });
 
-
-
-
-
-
 </script>
-
-
 
 
 </html>
