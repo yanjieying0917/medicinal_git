@@ -1,57 +1,60 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page isELIgnored="false" %>
 <html>
+<html>
 <head>
     <title>Title</title>
     <script src="resources/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
     <script src="resources/bootstrap-3.3.7-dist/js/jquery-1.9.1.min.js"></script>
     <link rel="stylesheet" href="resources/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-
     <style>
         body{
-              background-image: url("resources/image/bg.jpg");
-          }
-
+            background-image: url("resources/image/bg1.jpg");
+        }
         #div1{
             border:  1px solid #cccccc;
             margin:  100px auto;
             width: 35%;
-          background-color: rgba(255,255,255,0.3);
+            background-color: rgba(255,255,255,0.3);
+
+
 
         }
     </style>
 
 </head>
-
 <body>
 <div id="div1">
-<form class="form-horizontal" action="/toReg"  method="post" >
-    <h2 style="text-align: center">用 户 注 册</h2>
-    <div class="form-group">
-    <label for="d1" class="col-sm-2 control-label">用户&nbsp;名：</label>
-    <div class="col-sm-10">
-        <input type="text" name="username" style="width: 100%"  class="form-control" id="d1" placeholder="请输入用户名...">
-        <span id="sp"></span><span>${msg}</span>
-    </div>
-</div>
-    <div class="form-group">
-        <label for="inputPassword3" class="col-sm-2 control-label">密&nbsp;码：</label>
-        <div class="col-sm-10">
-            <input type="password" name="pwd" style="width: 100%"  class="form-control" id="inputPassword3" placeholder="请输入密码...">
+    <form class="form-horizontal" action="/toReg"  method="post" >
+        <h2 style="text-align: center">药品管理系统</h2>
+        <div class="form-group">
+            <label for="d1" class="col-sm-2 control-label">用户&nbsp;名：</label>
+            <div class="col-sm-10">
+                <input type="text" name="username" style="width: 100%"  class="form-control" id="d1" placeholder="请输入用户名...">
+                <span id="sp"></span><span>${msg}</span>
+            </div>
         </div>
-    </div>
+        <div class="form-group">
+            <label for="inputPassword3" class="col-sm-2 control-label">密&nbsp;码：</label>
+            <div class="col-sm-10">
+                <input type="password" name="pwd" style="width: 100%"  class="form-control" id="inputPassword3" placeholder="请输入密码...">
+            </div>
+        </div>
 
-    <div class="form-group">
-        <div class="col-sm-offset-2 col-sm-10">
-            <button type="submit" class="btn btn-primary" style="width: 22%;margin-left: 150px">注册</button>
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit" class="btn btn-primary" style="width: 22%;margin-left: 150px">注册</button><br>
+
+
+            </div>
         </div>
-    </div>
-</form>
+    </form>
+
 </div>
 </body>
 
-<script>
 
+<script>
     //给用户名输入框绑定失去焦点事件
     $("#d1").blur(function(){
 
@@ -70,11 +73,5 @@
             }
         });
     });
-
-
 </script>
-
-
-
-
 </html>

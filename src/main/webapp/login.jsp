@@ -8,7 +8,7 @@
 
     <style>
         body{
-              background-image: url("resources/image/bg.jpg");
+              background-image: url("resources/image/bg1.jpg");
           }
 
         #div1{

@@ -13,7 +13,7 @@
 
 
 </head>
-<body>
+<body background="resources/image/timg.jpg">
 
 
 <!-- 作为body的直接子元素-->
